@@ -16,14 +16,14 @@ public class TestController {
 	@RequestMapping("/test")
 	public String test(){
 		
-		return "spring boot";
+		return "spring boot!";
 	}
 	
-	@RequestMapping("insert")
+	@RequestMapping("/insert")
 	public String insert(){
 		User user = new User();
-		user.setId(12);
-		user.setName("小明");
+		user.setId(1);
+		user.setName("小明123");
 		userMapper.insertUser(user);
 		return "插入成功!";
 	}
