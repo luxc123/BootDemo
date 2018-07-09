@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.dao.UserMapper;
+import com.example.entity.User;
 
 @RestController
 public class TestController {
@@ -22,7 +23,7 @@ public class TestController {
 	@RequestMapping("/insert")
 	public String insert(){
 		User user = new User();
-		user.setId(1);
+		user.setId(2);
 		user.setName("小明123");
 		userMapper.insertUser(user);
 		return "插入成功!";

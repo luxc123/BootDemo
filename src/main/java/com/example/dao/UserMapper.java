@@ -2,7 +2,7 @@ package com.example.dao;
 
 import org.apache.ibatis.annotations.Insert;
 
-import com.example.demo.User;
+import com.example.entity.User;
 
 public interface UserMapper {
 	
